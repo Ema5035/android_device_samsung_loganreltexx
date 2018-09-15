@@ -22,9 +22,11 @@ $(call inherit-product, build/target/product/go_defaults.mk)
 $(call inherit-product, device/samsung/loganreltexx/loganreltexx.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 
-PRODUCT_NAME := lineage_loganreltexx
+PRODUCT_NAME := aosp_loganreltexx
 PRODUCT_DEVICE := loganreltexx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
